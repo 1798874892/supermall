@@ -4,64 +4,20 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-<<<<<<< HEAD
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
-  "dependencies": {
-    "core-js": "^3.7.0",
-    "vue": "^3.0.2"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.5.9",
-    "@vue/cli-plugin-eslint": "^4.5.9",
-    "@vue/cli-service": "^4.5.9",
-    "@vue/compiler-sfc": "^3.0.2",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.8.0",
-    "eslint-plugin-vue": "^7.1.0"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-=======
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "axios": "^0.21.0",
-    "better-scroll": "^2.0.5",
-    "core-js": "^2.6.5",
-    "vue": "^2.6.10",
-    "vue-router": "^3.4.9"
+    "@vue/compiler-sfc": "^3.0.4",
+    "axios": "^0.18.1",
+    "better-scroll": "^1.13.2",
+    "vue": "^2.5.21",
+    "vue-loader": "^15.9.5",
+    "vue-router": "^3.0.2",
+    "vuex": "^3.6.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.4",
-    "@vue/cli-service": "^3.0.4",
-    "vue-template-compiler": "^2.6.10"
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
->>>>>>> init
-  ]
+    "@vue/cli-plugin-babel": "^3.2.0",
+    "@vue/cli-service": "^4.5.9",
+    "vue-template-compiler": "^2.5.21"
+  }
 }

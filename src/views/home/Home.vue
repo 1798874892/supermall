@@ -38,6 +38,7 @@ import BackTop from 'components/content/backTop/BackTop'
 import { getHomeMultidata, getHomeData, RECOMMEND, BANNER } from 'network/home'
 import {NEW, POP, SELL, BACKTOP_DISTANCE} from "@/common/const";
 import {debounce} from 'common/utils'
+import {itemListenerMixin} from 'common/mixin'
 
 
 export default {
@@ -52,6 +53,7 @@ export default {
     Scroll,
     BackTop
   },
+  mixin: [itemListenerMixin],
   data() {
     return {
       banners: [],
