@@ -181,4 +181,22 @@ export default {
         padding-top: 10px;
         height: calc(100% - 44px);
     }
+
+    #detail {
+        position: relative;
+        z-index: 9;
+        background-color: #fff;
+        height: 100vh;
+    }
+
+    .detail-nav {
+        position: relative;
+        z-index: 9;
+        background-color: #fff;
+    }
+
+    .content {
+        height: calc(100% - 44px);
+    }
+
 </style>
