@@ -87,8 +87,10 @@ export default {
   },
   created() {
     console.log('创建Home');
+    // 1.请求多个数据
     this.getMultiData()
 
+    // 2.请求商品数据
     this.getHomeProducts(POP)
     this.getHomeProducts(NEW)
     this.getHomeProducts(SELL)
@@ -121,7 +123,9 @@ export default {
       this.$refs.scroll.scrollTo(0, 0)
     },
     contentScroll(position) {
+      // 决定backTop是否显示
         this.showBackTop = position.y < -BACKTOP_DISTANCE
+        // 决定tabFixed是否显示
         this.isTabFixed = position.y < -this.tabOffsetTop
       },
     loadMore() {

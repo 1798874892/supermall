@@ -21,7 +21,7 @@
   import CheckButton from './CheckButton'
 
   export default {
-    name: "ShopCartItem",
+    name: "CartListItem",
     props: {
       itemInfo: Object
     },

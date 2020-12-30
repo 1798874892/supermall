@@ -1,20 +1,17 @@
 <template>
-   <div>
        <nav-bar>
            <div slot="left" class="back" @click="backClick">
                <img src="~assets/img/common/back.svg" alt="">
            </div>
-           <div slot="center" class="title">
+           <div slot="center" class="titles">
                <div v-for="(item, index) in titles"
                :key="index"
                 class="title-item"
-                :class="{active: index === currentIndex}"
-                @click="titleClick(index)">
-                {{item}}
+                :class="{active: currentIndex === index}"
+                @click="titleClick(index)">{{item}}
                 </div>
            </div>
         </nav-bar>
-   </div>
 </template>
 
 <script>
@@ -33,17 +30,17 @@ export default {
     methods: {
         titleClick(index) {
             this.currentIndex = index
-            this.$emit('titleClick', index)
+            this.$emit('titleClick', index, 500)
         },
         backClick() {
-            this.$router.back()
+            this.$router.go(-1)
         }
     }
 }
 </script>
 
 <style scoped>
-    .title {
+    .titles {
         display: flex;
         padding: 0 20px;
         font-size: 14px;
@@ -57,7 +54,10 @@ export default {
         color: var(--color-high-text);
     }
 
-    .back {
+    .back img{
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
         margin-top: 12px;
     }
 </style>

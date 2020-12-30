@@ -18,7 +18,7 @@
       },
       pullUpLoad: {
         type: Boolean,
-        default: false
+        default: true
       }
     },
     data() {
@@ -28,7 +28,9 @@
     },
     mounted() {
       this.scroll = new BScroll(this.$refs.wrapper, {
+        scrollY: true,
         click: true,
+        observeDOM: true,
         probeType: this.probeType,
         pullUpLoad: this.pullUpLoad
       })
