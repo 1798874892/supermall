@@ -116,7 +116,7 @@ export default {
     },
     methods: {
         imageLoad() {
-            this.$refs.scorll && this.$refs.scroll.refresh()
+            this.$refs.scroll && this.$refs.scroll.refresh()
             this.getThemeTopY()
         },
         titleClick(index) {
@@ -156,7 +156,7 @@ export default {
             
         }
     },
-    destoryed() {
+    destroyed() {
         // 取消详情页推荐商品事件总线的监听，与首页商品列表区分开
         this.$bus.$off('itemImgLoad', this.itemImgListener)
     }
@@ -178,24 +178,8 @@ export default {
     }
 
     .content {
+        position: absolute;
         padding-top: 10px;
-        height: calc(100% - 44px);
-    }
-
-    #detail {
-        position: relative;
-        z-index: 9;
-        background-color: #fff;
-        height: 100vh;
-    }
-
-    .detail-nav {
-        position: relative;
-        z-index: 9;
-        background-color: #fff;
-    }
-
-    .content {
         height: calc(100% - 44px);
     }
 

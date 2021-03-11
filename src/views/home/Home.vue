@@ -1,6 +1,6 @@
 <template>
    <div id="home" class="wrapper">
-     <nav-bar class="home-nav"><div slot="center">购物车</div></nav-bar>
+     <nav-bar class="home-nav"><div slot="center">购物街</div></nav-bar>
       <tab-control ref="tabControl1" 
                     :titles="['流行', '新款', '精选']" 
                     @tabClick="tabClick"
@@ -53,7 +53,7 @@ export default {
     Scroll,
     BackTop
   },
-  mixin: [itemListenerMixin],
+  mixins: [itemListenerMixin],
   data() {
     return {
       banners: [],
