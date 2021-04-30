@@ -3,7 +3,7 @@
 
 ### 效果图
 
-![img](https://github.com/1798874892/supermall/row/master/public/77.gif)
+![img](https://github.com/1798874892/supermall/raw/master/public/77.gif)
 
 ### 项目使用须知
 > * 项目主要使用Vue+axios+better-scroll
