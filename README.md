@@ -1,12 +1,12 @@
 解压缩后，npm install安装依赖
 线上查看[请使用移动端查看,浏览器F12](http://mall.trigger7.cn/)
-*项目使用须知*
-      *项目主要使用Vue+axios+better-scroll*
-      *已完成首页,分类,购物车,我的四部分*
-      *此项目为移动端Web*
-      *使用时请先 npm install 安装扩展包*
-      *项目启动命令 npm run start*
-      *项目打包命令 npm run build*
+### 项目使用须知
+> * 项目主要使用Vue+axios+better-scroll
+> * 已完成首页,分类,购物车,我的四部分
+> * 此项目为移动端Web
+> * 使用时请先 npm install 安装扩展包
+> * 项目启动命令 npm run start
+> * 项目打包命令 npm run build
 
 # supermall
 
