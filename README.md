@@ -1,10 +1,6 @@
 解压缩后，npm install安装依赖
 线上查看[请使用移动端查看,浏览器F12](http://mall.trigger7.cn/)
 
-### 效果图
-
-![img](https://github.com/1798874892/supermall/raw/master/public/77.gif)
-
 ### 项目使用须知
 > * 项目主要使用Vue+axios+better-scroll
 > * 已完成首页,分类,购物车,我的四部分
